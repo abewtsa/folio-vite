@@ -1,4 +1,5 @@
 function Text({ header, textcopy }) {
+    
     return (
         <div>
             <h1>{header}</h1>
