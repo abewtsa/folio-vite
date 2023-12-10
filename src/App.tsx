@@ -1,13 +1,13 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
 
 import Homepage from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Layout from './pages/Layout.jsx'
-import Design from './pages/Design.jsx'
+import Contact from './pages/Contact.jsx'
 import About from './pages/About.jsx'
 import './App.css'
 
-import Nav from './components/Header/DropdownHeader/Nav.jsx'
+// import Nav from './components/Header/DropdownHeader/Nav.jsx'
 import Navbar from './components/Header/SimpleHeader/navbar.jsx'
 
 function App() {
@@ -21,17 +21,24 @@ function App() {
       <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
           <Route path="projects" element={<Projects />} />
-          <Route path="design" element={<Design />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="about" element={<About />} />
+          <Route path="newlink" element={
+                <Link
+                  to="https://reactrouter.com/docs/en/v6/components/link"
+                  reloadDocument={true}
+                  target="_blank"
+                >
+                  Docs
+                </Link>}/>
       </Route>
       </Routes>
 
     </BrowserRouter>
 
-      <footer>
-        Built with React - read more about this package
-      </footer>
-
+    <footer>
+      Built in React with Vite 
+    </footer>
     </>
   )
 }

@@ -23,7 +23,7 @@ function ToggleImages({ active, handleChangeActive }) {
             />
           )}
         </div>
-        <div className="title">ABEUX</div>
+        <div className="title">AbeBuildsReact</div>
       </>
     );
   }

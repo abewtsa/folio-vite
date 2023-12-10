@@ -29,7 +29,7 @@ const Navbar = () => {
         
         {/*  <Hamburger /> */}
         </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
+        <div className={`nav-elements  ${showNavbar && 'active'}`} onClick={handleShowNavbar}>
           <ul>
             <li>
               <NavLink to="/">Home</NavLink>
